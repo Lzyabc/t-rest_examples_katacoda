@@ -17,7 +17,7 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal-terminal",
+    "uilayout": "editor-terminal",
     "uisettings": "javascript"
   },
   "backend": {
