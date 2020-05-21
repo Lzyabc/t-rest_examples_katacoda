@@ -3,10 +3,16 @@
  * @Author: lzy
  * @Date: 2020-05-21 10:06:26
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 11:26:34
+ * @LastEditTime: 2020-05-21 11:58:02
 --> 
-We use curl to deploy foo.cht at `[[HOST_IP]]`:1206/foo, 
-and bar.cht at `[[HOST_IP]]`:1207/bar
+We use curl to deploy foo.cht at 
+
+`[[HOST_IP]]``:1206/foo`, 
+
+and bar.cht at 
+
+`[[HOST_IP]]``:1207/bar`
+
 Because *bar* and *foo* runs on the local hosts, so we can use
 "localhost" as the ip address.
 

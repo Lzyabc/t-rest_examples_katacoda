@@ -3,19 +3,23 @@
  * @Author: lzy
  * @Date: 2020-05-21 10:06:25
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 11:39:34
+ * @LastEditTime: 2020-05-21 11:52:54
 --> 
 We will develop bar.cht and foo.cht for *bar* and *foo*
 
 Make an example directory 
 
 `mkdir examples/`{{execute}}
+
 `cd examples/`{{execute}}
 
-Create two files, and open the files on editor.
+Create bar.cht and foo.cht.
 
 `touch bar.cht`{{execute}}
+
 `touch foo.cht`{{execute}}
+
+Click bar.cht and foo.cht in examples/ will open them in edtior.
 
 Copy file to bar.cht in editor:
 
