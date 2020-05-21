@@ -10,6 +10,7 @@
     ]
   },
   "intro": {
+    "courseData": "background.sh",
     "text": "intro.md",
     "credits": ""
   },
