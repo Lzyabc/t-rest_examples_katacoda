@@ -3,17 +3,13 @@
  * @Author: lzy
  * @Date: 2020-05-21 09:29:04
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 17:22:07
+ * @LastEditTime: 2020-05-21 17:52:03
 --> 
 Welcome to your first T-REST Scenario!
 
 In this example, we will deploy two T-REST resource *foo* and *bar* on two nodes
-respectively. Resource *foo* depends on *bar*. At time t, if the value of *bar*
-equals to 1, then the *foo’s* value equals to **True**, else **False**.
+respectively. You can post string to *foo*, *foo* will automatically post the string
+to *bar*. You can also directly post string to *bar*.
 
-First, we will run T-REST engine instance and develop bar.cht and foo.cht.
-
-Next, we will configure foo.cht for *foo* to find *bar* , deploy and get
-*foo* and *bar*.
-
-Finally, we will delete the two resources and stop T-REST engine instances.
+*foo* and *bar* don't have "out_func", so you can only get the store value of the two
+resources.

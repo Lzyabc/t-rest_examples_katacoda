@@ -7,6 +7,6 @@
 --> 
 
 What we have completed:
-1. Develop two cHT files and configure them to make one call the other;
+1. Develop two cHT files and configure them to make one get the other;
 2. Deploy T-REST resources on two nodes;
 3. Get the deployed T-REST resource's value and cHT;

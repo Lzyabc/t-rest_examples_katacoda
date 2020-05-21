@@ -3,7 +3,7 @@
  * @Author: lzy
  * @Date: 2020-05-21 10:06:27
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 17:19:24
+ * @LastEditTime: 2020-05-21 17:56:53
 --> 
 
 This step will complete the config part.
@@ -15,7 +15,7 @@ doesn't use any libraries, so we set libraries to NULL.
     "libs": [],
 </pre>
 
-Key word "out_func" indicates the list of functions to execute when a resource
+Key word "out_func" lists functions to execute when a resource
 receives a **GET** request
 
 <pre class="file" data-filename="say_hello.cht" data-target="prepend"> 

@@ -3,7 +3,7 @@
  * @Author: lzy
  * @Date: 2020-05-21 10:06:27
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 12:28:11
+ * @LastEditTime: 2020-05-21 18:15:02
 --> 
 This step shows how to configure cHT.
 
@@ -17,12 +17,8 @@ Because we want to deploy *bar* at
 replace the "host_ip" with `[[HOST_IP]]` in editor.
 
 ```   
-"bar": [
-    "http://host_ip:1207/bar",
-    "application/bson"
-]
+      "bar": [
+         "http://host_ip:1207/bar",
+         "text/plain"
+      ]
 ```
-
-## Config bar.cht
-
-*bar* does not depends on any other resources, so we don't need to configure bar.cht.

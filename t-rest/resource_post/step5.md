@@ -3,28 +3,38 @@
  * @Author: lzy
  * @Date: 2020-05-21 10:06:26
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 12:15:33
+ * @LastEditTime: 2020-05-21 19:44:27
 --> 
-You can **GET** *foo*'s value.
+You can **POST** "Hello~" to *foo*.
 
-`curl http://[[HOST_IP]]:1206/foo?t="now"`{{execute}}
+`curl -X POST -d "Hello~" http://[[HOST_IP]]:1206/foo?t="1590055428"`{{execute}}
 
-And you will always get
+And you will get
 
 ```
-True
+Append Done.
+```
+
+*foo* will call its "in_func" f_in, f_in will post "Hello~" to *bar*,
+so if you get *bar*:
+
+`curl http://[[HOST_IP]]:1207/bar?t="1590055428"`{{execute}}
+
+You will get reponse
+
+```
+Hello~
 ```
 
 Note: if you get errors, go step3 and check if foo.cht is configured correctly 
 
-*bar*'s value is in binary format and cannot show on terminal,
-so you can **GET** and store it in file.
+As we stated in step2, if you set `t = "now"`
 
-`curl http://[[HOST_IP]]:1207/bar?t="now" > bar_value`{{execute}}
+`curl http://[[HOST_IP]]:1207/bar?t="1590055428"`{{execute}}
 
-`ls`{{execute}}
+You cannot see the reponse. Actually, the T-REST engine will return a HTTP 400 status
+code without content.
 
-You can also **GET** foo.cht and bar.cht
-`curl http://[[HOST_IP]]:1206/foo.cht`{{execute}}
+You can see the ins2's log for details
 
-`curl http://[[HOST_IP]]:1207/bar.cht`{{execute}}
+`docker logs -f ins2`{{execute}}

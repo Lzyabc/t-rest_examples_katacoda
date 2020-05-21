@@ -3,7 +3,7 @@
  * @Author: lzy
  * @Date: 2020-05-21 10:06:25
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 17:25:47
+ * @LastEditTime: 2020-05-21 18:14:48
 --> 
 We will develop bar.cht and foo.cht for *bar* and *foo*
 
@@ -18,26 +18,16 @@ Copy content to bar.cht:
 
 <pre class="file" data-filename="bar.cht" data-target="replace">
 {
-   "out_func": {
+   "in_func": {
       "f": {}
    },
-   "init_func": {
-      "init": {}
-   },
-   "destory_func": {
-      "destory": {}
-   },
-   "code": "function f(t)\n    packet={}\n     packet.v=1\n    bson_stream=bson.encode(packet)\n    bar@(t)=bson_stream\n    end\n    function init(t)\n    print(\"Hello~\")\n    end\n    function destory(t)\n    print(\"Bye~\")\n    end",
-   "plan": "none",
-   "libs": [
-      "bson"
-   ],
    "vars": {
       "bar": [
          "self",
-         "application/bson"
+         "text/plain"
       ]
    },
+   "code": "function f(t) print(bar@(t)) end",
    "language": "everylite"
 }
 </pre>
@@ -46,14 +36,11 @@ Copy content to foo.cht in editor:
 
 <pre class="file" data-filename="foo.cht" data-target="replace">
 {
-   "out_func": {
-      "f": {}
+   "in_func": {
+      "fin": {}
    },
-   "code": "function f(t)\n    bson_stream=bar@(t)\n    packet=bson.decode(bson_stream)\n    if(packet.v==1) then\n    foo@(t)=\"True\"\n    else\n    foo@(t)=\"False\"\n    end\n    end",
+   "code": "function fin(t) bar@(t) = foo@(t) end",
    "plan": "none",
-   "libs": [
-      "bson"
-   ],
    "vars": {
       "foo": [
          "self",
@@ -61,9 +48,17 @@ Copy content to foo.cht in editor:
       ],
       "bar": [
          "http://host_ip:1207/bar",
-         "application/bson"
+         "text/plain"
       ]
    },
    "language": "everylite"
 }
+
 </pre>
+
+Key word "in_func" lists the functions to execute when a resource receives a POST request.
+Take bar.cht as example, if you **POST** a string to *bar*, the "in_func" f of *bar* will
+be called, f will print the posted string.
+
+bar.cht and foo.cht don't have "out_func", so you can only get the stored value.
+For example, you can not GET /bar?t="now", because *bar* can't generate current value.
