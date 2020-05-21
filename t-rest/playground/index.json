@@ -4,13 +4,13 @@
   "details": {
     "steps": [
       {
+        "courseData": "background.sh",
         "title": "T-REST Playground",
         "text": "step1.md"
       }
     ]
   },
   "intro": {
-    "courseData": "background.sh",
     "text": "intro.md",
     "credits": ""
   },
