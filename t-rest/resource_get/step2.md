@@ -3,23 +3,18 @@
  * @Author: lzy
  * @Date: 2020-05-21 10:06:25
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 12:29:21
+ * @LastEditTime: 2020-05-21 17:25:47
 --> 
 We will develop bar.cht and foo.cht for *bar* and *foo*
 
-Make an example directory and create bar.cht and foo.cht.
+Create bar.cht and foo.cht.
 
-`mkdir examples/`{{execute}}
 
-`cd examples/`{{execute}}
+`touch bar.cht && touch foo.cht`{{execute}}
 
-`touch bar.cht`{{execute}}
+**Open** `bar.cht`{{open}} and `foo.cht`{{open}} in editor.
 
-`touch foo.cht`{{execute}}
-
-**Click** bar.cht and foo.cht in examples/ and **open** them in edtior.
-
-Copy content to bar.cht in editor:
+Copy content to bar.cht:
 
 <pre class="file" data-filename="bar.cht" data-target="replace">
 {

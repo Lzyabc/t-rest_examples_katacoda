@@ -3,7 +3,7 @@
  * @Author: lzy
  * @Date: 2020-05-21 09:29:04
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 16:09:09
+ * @LastEditTime: 2020-05-21 17:04:01
 --> 
 We use docker to deploy and run T-REST engine.
 
@@ -15,7 +15,7 @@ Pull T-REST images from Docker hub.
 
 ## Run T-REST instance
 
-Start two T-REST engine instances.
+Start a T-REST engine instance.
 
 `docker run -tid -p 1207:1206 --name=ins lucaszy/t-rest_tmp:v1 t-rest`{{execute}}
 

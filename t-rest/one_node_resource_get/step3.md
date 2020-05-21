@@ -3,7 +3,7 @@
  * @Author: lzy
  * @Date: 2020-05-21 10:06:27
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 16:54:26
+ * @LastEditTime: 2020-05-21 17:19:24
 --> 
 
 This step will complete the config part.
@@ -27,7 +27,7 @@ receives a **GET** request
 Function calls can also be timer triggered. “plan” is none means there is no timed task.
 
 <pre class="file" data-filename="say_hello.cht" data-target="append"> 
-   "plan": "none",
+    "plan": "none",
 </pre>
 
 If you want the say_hello function execute automatically every 3600 seconds, you can set
@@ -55,7 +55,7 @@ Set the varables' URI and type. “self” means it’s not a remote resource.
     "vars": {
         "hello": [
             "self",
-            "application/bson"
+            "text/plain"
         ]
     },
 </pre>
