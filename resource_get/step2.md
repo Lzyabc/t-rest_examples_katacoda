@@ -3,25 +3,23 @@
  * @Author: lzy
  * @Date: 2020-05-21 10:06:25
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 11:52:54
+ * @LastEditTime: 2020-05-21 12:29:21
 --> 
 We will develop bar.cht and foo.cht for *bar* and *foo*
 
-Make an example directory 
+Make an example directory and create bar.cht and foo.cht.
 
 `mkdir examples/`{{execute}}
 
 `cd examples/`{{execute}}
 
-Create bar.cht and foo.cht.
-
 `touch bar.cht`{{execute}}
 
 `touch foo.cht`{{execute}}
 
-Click bar.cht and foo.cht in examples/ will open them in edtior.
+**Click** bar.cht and foo.cht in examples/ and **open** them in edtior.
 
-Copy file to bar.cht in editor:
+Copy content to bar.cht in editor:
 
 <pre class="file" data-filename="bar.cht" data-target="replace">
 {
@@ -49,7 +47,7 @@ Copy file to bar.cht in editor:
 }
 </pre>
 
-Copy file to foo.cht in editor:
+Copy content to foo.cht in editor:
 
 <pre class="file" data-filename="foo.cht" data-target="replace">
 {

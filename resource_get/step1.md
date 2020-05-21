@@ -3,10 +3,11 @@
  * @Author: lzy
  * @Date: 2020-05-21 09:29:04
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 12:08:12
+ * @LastEditTime: 2020-05-21 12:30:41
 --> 
-We can docker to deploy and run T-REST engine.
+We use docker to deploy and run T-REST engine.
 In this step, we will run two T-REST instances.
+
 ## Pull T-REST images
 
 Pull T-REST images from Docker hub.

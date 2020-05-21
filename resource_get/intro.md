@@ -3,11 +3,9 @@
  * @Author: lzy
  * @Date: 2020-05-21 09:29:04
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 12:07:05
+ * @LastEditTime: 2020-05-21 12:21:13
 --> 
 Welcome to your first T-REST Scenario!
-
-It will take about 1 minutes to load the environment.
 
 In this example, we will deploy two T-REST resource *foo* and *bar* on two nodes
 respectively. Resource *foo* depends on *bar*. At time t, if the value of *bar*
@@ -21,3 +19,5 @@ Next, we will develop, configure and deploy computational HyperText (cHT) bar.ch
 Finally, we will delete the two resources and stop T-REST engine instances.
 
 Let's start!
+
+It will take about 1 minutes to load the environment.
