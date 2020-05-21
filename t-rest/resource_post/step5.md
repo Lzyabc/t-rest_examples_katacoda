@@ -3,7 +3,7 @@
  * @Author: lzy
  * @Date: 2020-05-21 10:06:26
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 19:44:27
+ * @LastEditTime: 2020-05-21 21:40:35
 --> 
 You can **POST** "Hello~" to *foo*.
 
@@ -27,6 +27,16 @@ Hello~
 ```
 
 Note: if you get errors, go step3 and check if foo.cht is configured correctly 
+
+If you post again
+
+`curl http://[[HOST_IP]]:1207/bar?t="1590055428"`{{execute}}
+
+and the reponse will be:
+
+```
+Data Already Exists.
+```
 
 As we stated in step2, if you set `t = "now"`
 

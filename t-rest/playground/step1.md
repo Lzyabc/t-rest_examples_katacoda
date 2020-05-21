@@ -3,29 +3,31 @@
  * @Author: lzy
  * @Date: 2020-05-21 09:29:04
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 12:30:41
+ * @LastEditTime: 2020-05-21 21:34:05
 --> 
-We use docker to deploy and run T-REST engine.
-In this step, we will run two T-REST instances.
 
-## Pull T-REST images
+## Local environment
 
-Pull T-REST images from Docker hub.
+Local IP address is `[[HOST_IP]]`
+
+You need to install T-REST with
 
 `docker pull lucaszy/t-rest_tmp:v1`{{execute}}
 
-## Run two instances
+And run command
 
-Start two T-REST engine instances.
+`docker run -tid -p 1206:1206 --name=ins lucaszy/t-rest_tmp:v1 t-rest`{{execute}}
 
-`docker run -tid -p 1206:1206 --name=ins1 lucaszy/t-rest_tmp:v1 t-rest`{{execute}}
+The you will get local T-REST engine instance.
 
-`docker run -tid -p 1207:1206 --name=ins2 lucaszy/t-rest_tmp:v1 t-rest`{{execute}}
+T-REST engine runs on `http://[[HOST_IP]]:1206/`
 
-The above **command** will start two T-REST engine instances, with name "ins1" and
-"ins2". 
+## Remote server environment
 
-T-REST engine's default port is 1206,"-p 1206:1206" and "-p 1207:1206" will
-map host's port 1206 to ins1's 1206, and map host's port 1207  to ins2's 1206. 
+T-REST engine runs on remote server : `http://49.235.231.130:1206/`
 
-So we get ins1 runs on `[[HOST_IP]]:1206`, and ins2 runs on `[[HOST_IP]]:1207`
+You can use it directly.
+
+## Remote Things envrionment
+
+T-REST engine runs on Raspberry Pi : Not available at the moment.

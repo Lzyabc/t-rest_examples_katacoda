@@ -3,7 +3,7 @@
  * @Author: lzy
  * @Date: 2020-05-21 10:06:27
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 17:56:53
+ * @LastEditTime: 2020-05-21 20:55:23
 --> 
 
 This step will complete the config part.
@@ -72,4 +72,25 @@ Because we use JSON format, "{}" is needed in begin and end.
 </pre>
 
 <pre class="file" data-filename="say_hello.cht" data-target="append">}
+</pre>
+
+The complete content of say_hello.cht is:
+
+<pre class="file" data-filename="say_hello.cht" data-target="replace">{
+{
+    "out_func": {
+        "say_hello": {}
+    },
+    "code": "function say_hello(t)\n    hello@(t)=\"Hello~\"    end",
+    "libs": [],
+    "plan": "none",
+    "vars": {
+        "hello": [
+            "self",
+            "text/plain"
+        ]
+    },
+  "language": "everylite"
+
+}
 </pre>

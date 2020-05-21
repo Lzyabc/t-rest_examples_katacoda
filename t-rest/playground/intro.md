@@ -3,21 +3,11 @@
  * @Author: lzy
  * @Date: 2020-05-21 09:29:04
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 12:21:13
+ * @LastEditTime: 2020-05-21 21:19:29
 --> 
-Welcome to your first T-REST Scenario!
+Welcome to your T-REST's Playground!
 
-In this example, we will deploy two T-REST resource *foo* and *bar* on two nodes
-respectively. Resource *foo* depends on *bar*. At time t, if the value of *bar*
-equals to 1, then the *foo’s* value equals to **True**, else **False**.
+This scenario provides several configured T-REST engine environment
+on different devices.
 
-First, we will show how to install and run T-REST engine using Docker.
-
-Next, we will develop, configure and deploy computational HyperText (cHT) bar.cht and foo.cht for
-*foo* and *bar* respectively, and use the deployed resource.
-
-Finally, we will delete the two resources and stop T-REST engine instances.
-
-Let's start!
-
-It will take about 1 minutes to load the environment.
+Have fun!
