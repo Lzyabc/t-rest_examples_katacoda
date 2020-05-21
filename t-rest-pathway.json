@@ -20,7 +20,7 @@
         {
             "course_id": "playground",
             "title": "T-REST playground",
-            "description": "Configured T-REST environment on server and things devices"
+            "description": "Configured T-REST environments on server and things devices"
         }
     ]
   }
