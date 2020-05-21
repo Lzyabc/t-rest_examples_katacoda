@@ -2,10 +2,25 @@
     "title": "T-REST Interactive Tutorial",
     "description": "Learn how to develop, deploy, use and delete T-REST resource using computational HyperText",
     "courses": [
-      {
-        "course_id": "resource_get",
-        "title": "Deploy T-REST resources on two nodes",
-        "description": "Learn how to deploy and configure T-REST resources on two node"
-      }
+        {
+            "course_id": "one_node_resource_get",
+            "title": "Deploy and develop T-REST resource on single node",
+            "description": "Learn how to deploy T-REST resource"
+        },
+        {
+            "course_id": "resource_get",
+            "title": "Deploy and Get T-REST resources on two nodes",
+            "description": "Learn how to deploy and configure T-REST resources on two node"
+        },
+        {
+            "course_id": "resource_post",
+            "title": "Deploy and Post T-REST resources on two nodes",
+            "description": "Learn how to post value to T-REST resources on two node"
+        },
+        {
+            "course_id": "playground",
+            "title": "T-REST playground",
+            "description": "Configured  T-REST engines on server and things devices"
+        }
     ]
   }

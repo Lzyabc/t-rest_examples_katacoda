@@ -1,0 +1,48 @@
+{
+  "title": "Deploy T-REST resources on two nodes",
+  "description": "Learn how to deploy and configure T-REST resources on two node",
+  "difficulty": "beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - Run T-REST engine",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - Script",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Resource Configuration",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Deploy",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5 - GET",
+        "text": "step5.md"
+      },
+      {
+        "title": "Step 6 - DELETE",
+        "text": "step6.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uisettings": "json"
+  },
+  "backend": {
+    "imageid": "docker-swarm"
+  }
+}
