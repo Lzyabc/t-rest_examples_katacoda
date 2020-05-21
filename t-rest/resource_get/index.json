@@ -1,6 +1,6 @@
 {
-  "title": "Deploy and get T-REST resource",
-  "description": "Learn how to deploy and get T-REST resource",
+  "title": "Deploy T-REST resources on two nodes",
+  "description": "Learn how to deploy and configure T-REST resources on two node",
   "difficulty": "beginner",
   "time": "15 minutes",
   "details": {
