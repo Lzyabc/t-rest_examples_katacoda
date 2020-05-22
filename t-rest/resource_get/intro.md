@@ -16,4 +16,4 @@ Next, we will configure foo.cht for *foo* to find *bar* , deploy and get
 
 Finally, we will delete the two resources and stop T-REST engine instances.
 
-It will take about 1 minutes to load the environment.
+It will take about 1 minute to load the environment.

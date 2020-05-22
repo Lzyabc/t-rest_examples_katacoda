@@ -3,7 +3,7 @@
  * @Author: lzy
  * @Date: 2020-05-21 09:29:04
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 16:52:53
+ * @LastEditTime: 2020-05-22 20:15:02
 --> 
 Welcome to your first T-REST Scenario!
 
@@ -22,4 +22,4 @@ Finally, we will delete the deployed resource and stop T-REST engine instance.
 
 Let's start!
 
-Click "START SCENARIO", it will take about 1 minutes to load the environment.
+Click "START SCENARIO", it will take about 1 minute to load the environment.

@@ -12,4 +12,4 @@ to *bar*. You can also directly post string to *bar*.
 *foo* and *bar* don't have "out_func", so you can only get the stored value of the two
 resources.
 
-It will take about 1 minutes to load the environment.
+It will take about 1 minute to load the environment.
