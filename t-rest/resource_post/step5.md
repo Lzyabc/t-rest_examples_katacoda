@@ -3,7 +3,7 @@
  * @Author: lzy
  * @Date: 2020-05-21 10:06:26
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-22 20:07:54
+ * @LastEditTime: 2020-05-22 20:12:39
 --> 
 You can **POST** "Hello~" to *foo*.
 
@@ -31,7 +31,7 @@ Note: if you get errors, go step3 and check if foo.cht is configured correctly
 
 If you post again
 
-`curl http://[[HOST_IP]]:1207/bar?t=1590055428\&flag=execute`{{execute}}
+`curl -X POST -d "Hello~" http://[[HOST_IP]]:1206/foo?t=1590055428\&flag=execute`{{execute}}
 
 and the reponse will be:
 
@@ -39,7 +39,7 @@ and the reponse will be:
 Data Already Exists.
 ```
 
-As we stated in step2, if you set `t = "now"`
+As we stated in step2, if you set `t="now"`
 
 `curl http://[[HOST_IP]]:1207/bar?t="now"`{{execute}}
 
