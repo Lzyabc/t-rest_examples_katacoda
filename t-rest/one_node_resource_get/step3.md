@@ -3,7 +3,7 @@
  * @Author: lzy
  * @Date: 2020-05-21 10:06:27
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-22 09:39:41
+ * @LastEditTime: 2020-05-22 18:32:15
 --> 
 
 This step will complete the config part.
@@ -18,7 +18,7 @@ doesn't use any libraries, so we set libraries to NULL.
 Key word "out_func" lists functions to execute when a resource
 receives a **GET** request
 
-<pre class="file" data-filename="say_hello.cht" data-target="prepend"> 
+<pre class="file" data-filename="say_hello.cht" data-target="prepend">
     "out_func": {
         "say_hello": {}
     },
@@ -26,7 +26,7 @@ receives a **GET** request
 
 Function calls can also be timer triggered. “plan” is none means there is no timed task.
 
-<pre class="file" data-filename="say_hello.cht" data-target="append"> 
+<pre class="file" data-filename="say_hello.cht" data-target="append">
     "plan": "none",
 </pre>
 
@@ -51,7 +51,7 @@ or
 The entry “vars” shows all the resource variables used in the scripts.
 Set the varables' URI and type. “self” means it’s not a remote resource.
 
-<pre class="file" data-filename="say_hello.cht" data-target="append"> 
+<pre class="file" data-filename="say_hello.cht" data-target="append">
     "vars": {
         "hello": [
             "self",
@@ -62,7 +62,7 @@ Set the varables' URI and type. “self” means it’s not a remote resource.
 
 Set the script language
 
-<pre class="file" data-filename="say_hello.cht" data-target="append"> 
+<pre class="file" data-filename="say_hello.cht" data-target="append">
    "language": "everylite"
 </pre>
 
