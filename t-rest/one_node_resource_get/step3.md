@@ -3,7 +3,7 @@
  * @Author: lzy
  * @Date: 2020-05-21 10:06:27
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 20:55:23
+ * @LastEditTime: 2020-05-22 09:39:41
 --> 
 
 This step will complete the config part.
@@ -74,9 +74,9 @@ Because we use JSON format, "{}" is needed in begin and end.
 <pre class="file" data-filename="say_hello.cht" data-target="append">}
 </pre>
 
-The complete content of say_hello.cht is:
+Let's delete the blank lines, and the final content of say_hello.cht is:
 
-<pre class="file" data-filename="say_hello.cht" data-target="replace">{
+<pre class="file" data-filename="say_hello.cht" data-target="replace">
 {
     "out_func": {
         "say_hello": {}
@@ -91,6 +91,5 @@ The complete content of say_hello.cht is:
         ]
     },
   "language": "everylite"
-
 }
 </pre>
