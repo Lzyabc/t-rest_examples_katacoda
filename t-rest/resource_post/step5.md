@@ -3,11 +3,11 @@
  * @Author: lzy
  * @Date: 2020-05-21 10:06:26
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-22 18:53:43
+ * @LastEditTime: 2020-05-22 19:43:55
 --> 
 You can **POST** "Hello~" to *foo*.
 
-`curl -X POST -d "Hello~" http://[[HOST_IP]]:1206/foo?t=1590055428`{{execute}}
+`curl -X POST -d "Hello~" http://[[HOST_IP]]:1206/foo?t=1590055428&&flag=execute`{{execute}}
 
 And you will get
 
@@ -15,7 +15,8 @@ And you will get
 Append Done.
 ```
 
-*foo* will call its "in_func" f_in, f_in will post "Hello~" to *bar*,
+"flag=execute" in a **POST** request means **POST** value and call "in_func" of the resource.
+In this example, *foo* will call its "in_func" f_in, f_in will post "Hello~" to *bar*,
 so if you get *bar*:
 
 `curl http://[[HOST_IP]]:1207/bar?t=1590055428`{{execute}}
@@ -30,7 +31,7 @@ Note: if you get errors, go step3 and check if foo.cht is configured correctly
 
 If you post again
 
-`curl http://[[HOST_IP]]:1207/bar?t=1590055428`{{execute}}
+`curl http://[[HOST_IP]]:1207/bar?t=1590055428&&flag=execute`{{execute}}
 
 and the reponse will be:
 
