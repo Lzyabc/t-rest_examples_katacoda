@@ -3,13 +3,13 @@
  * @Author: lzy
  * @Date: 2020-05-21 10:06:27
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 18:15:02
+ * @LastEditTime: 2020-05-27 15:20:51
 --> 
-This step shows how to configure cHT.
+This step shows how to configure HyperTask.
 
-## Config foo.cht
+## Config foo.ht
 
-*foo* depends on *bar*, so you need to config *bar*'s URI in foo.cht.
+*foo* depends on *bar*, so you need to config *bar*'s URI in foo.ht.
 Because we want to deploy *bar* at 
 
 `[[HOST_IP]]:1207/bar`,

@@ -27,7 +27,7 @@ You will get reponse
 Hello~
 ```
 
-Note: if you get errors, go step3 and check if foo.cht is configured correctly 
+Note: if you get errors, go step3 and check if foo.ht is configured correctly 
 
 If you post again
 

@@ -3,7 +3,7 @@
  * @Author: lzy
  * @Date: 2020-05-21 10:06:26
  * @LastEditors: lzy
- * @LastEditTime: 2020-05-21 12:15:33
+ * @LastEditTime: 2020-05-27 15:20:02
 --> 
 You can **GET** *foo*'s value.
 
@@ -15,7 +15,7 @@ And you will always get
 True
 ```
 
-Note: if you get errors, go step3 and check if foo.cht is configured correctly 
+Note: if you get errors, go step3 and check if foo.ht is configured correctly 
 
 *bar*'s value is in binary format and cannot show on terminal,
 so you can **GET** and store it in file.
@@ -24,7 +24,7 @@ so you can **GET** and store it in file.
 
 `ls`{{execute}}
 
-You can also **GET** foo.cht and bar.cht
-`curl http://[[HOST_IP]]:1206/foo.cht`{{execute}}
+You can also **GET** foo.ht and bar.ht
+`curl http://[[HOST_IP]]:1206/foo.ht`{{execute}}
 
-`curl http://[[HOST_IP]]:1207/bar.cht`{{execute}}
+`curl http://[[HOST_IP]]:1207/bar.ht`{{execute}}
